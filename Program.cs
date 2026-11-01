@@ -10,7 +10,7 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.MapGet("/", () => );
 //список + Фильтрация (search)
 app.MapGet("/api/flights", (string? search) =>
 {
